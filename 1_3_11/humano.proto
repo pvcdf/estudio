@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package humano;
+
+option go_package = "./pb"; 
+
+message Humano {
+  string nombre = 1;
+  int64 edad = 2;
+  int64 iq = 3;
+
+}
