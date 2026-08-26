@@ -8,5 +8,13 @@ message Humano {
   string nombre = 1;
   int64 edad = 2;
   int64 iq = 3;
+}
 
+message resultadoHumano {
+  bool Valido = 1;
+  string mensaje = 2;
+}
+
+service maquinaHumana {
+  rpc evaluarHumano (Humano) returns (resultadoHumano);
 }
